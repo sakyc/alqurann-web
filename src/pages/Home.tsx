@@ -1,4 +1,3 @@
-import React from 'react'
 import Hero from '../components/home/Hero'
 import Container_surah from '../components/home/surah/Container_surah'
 
