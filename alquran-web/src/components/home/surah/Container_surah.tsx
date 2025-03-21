@@ -1,5 +1,5 @@
 import  {useState, useEffect } from 'react'
-import type { Surah } from '../../type'
+import type { Surah } from '../../types/type'
 import List_surah from './List_surah';
 
 const Container_surah = () => {

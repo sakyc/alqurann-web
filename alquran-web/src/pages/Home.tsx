@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '../components/home/Hero'
-import Container_surah from '../components/surah/Container_surah'
+import Container_surah from '../components/home/surah/Container_surah'
 
 const Home = () => {
     return (

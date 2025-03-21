@@ -1,4 +1,4 @@
-import { Surah } from "../../type";
+import { Surah } from "../../types/type";
 import Card_surah from "./Card_surah";
 
 type surahListProps = {

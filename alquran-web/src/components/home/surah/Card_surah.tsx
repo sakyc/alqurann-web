@@ -1,5 +1,6 @@
-import { Surah } from "../../type";
-import Nomber from "../home/child/Nomber";
+import { Surah } from "../../types/type";
+import Nomber from "../child/Nomber";
+import { Link } from "react-router-dom";
 
 type cardSurahProps = {
     surah: Surah
@@ -7,7 +8,8 @@ type cardSurahProps = {
 
 const Card_surah = ({surah}: cardSurahProps) => {
     return (
-        <div className="flex w-full justify-between bg-dark-colore rounded-2xl p-4">
+        <Link to={`/surah/${surah.nomor}`}>
+            <div className="flex w-full justify-between bg-dark-colore rounded-2xl p-4" onClick={() => console.log(surah.nomor)}>
             <div className="text-light-colore flex flex-row gap-4">
                 <Nomber number={surah.nomor} />
                 <div className="">
@@ -18,6 +20,8 @@ const Card_surah = ({surah}: cardSurahProps) => {
             </div>
             <h1 className="text-accent-light-purple-colore font-bold ">{surah.nama}</h1>
         </div>
+        </Link>
+        
     )
 }
 
