@@ -4,6 +4,7 @@ import List_surah from './List_surah';
 
 const Container_surah = () => {
     let [surah, setSurah] = useState<Surah[]>([]);
+    let [search, setSearch] = useState('');
     // let [isLoading, setIsLoading] = useState(true);
     // let [error, setError] = useState(null);
     useEffect(() => {
@@ -21,11 +22,21 @@ const Container_surah = () => {
         getSurah();
     }, [])
 
-    let dataFiltered = surah.filter(data => data.namaLatin.toLowerCase().includes('al-fatihah'));
+    let dataFiltered = surah.filter(data => data.namaLatin.toLowerCase().includes(search));
     
     return (
     
-    <List_surah data_surah={dataFiltered}/>
+    <div>
+        <input 
+            type="text"
+            placeholder="Cari surah..."
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            className="w-full p-2 mb-7  border-b-light-colore border-b-1 rounded-lg focus:outline-none center text-white block mx-auto "
+        />
+        
+        <List_surah data_surah={dataFiltered} />
+    </div>
     
     )
     }
