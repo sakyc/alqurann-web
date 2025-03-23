@@ -21,10 +21,11 @@ const Container_surah = () => {
         getSurah();
     }, [])
 
+    let dataFiltered = surah.filter(data => data.namaLatin.toLowerCase().includes('al-fatihah'));
     
     return (
     
-    <List_surah data_surah={surah}/>
+    <List_surah data_surah={dataFiltered}/>
     
     )
     }

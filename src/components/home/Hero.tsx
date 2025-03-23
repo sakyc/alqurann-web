@@ -4,7 +4,7 @@ import imgProfile from "../../assets/img.jpeg"
 
 let Hero = () => {
     return (
-        <div className="relative mb-15">
+        <div className="relative mb-20">
             <div className="bg-[url('assets/HeroBackgroundImage.png')] bg-cover bg-no-repeat w-full h-55 rounded-b-2xl">
                 <div className="relative flex flex-col gap-8 px-5 pt-8">
                     <Home_profile_top name="Rifki Muhammad Fadhil" greeting="Good Morning" img={imgProfile}/>

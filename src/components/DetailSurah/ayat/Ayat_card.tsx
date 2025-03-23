@@ -13,7 +13,7 @@ function AyatCard({ ayat }: AyatCardProps) {
         <p className="font-light text-3xl text-right w-full font-[Amiri]">{ayat.teksArab}</p>
       </div>
       <p className="font-sm text-light-colore">{ayat.teksLatin}</p>
-      <p className="font-sm text-subtle-colore ">{ayat.teksIndonesia}</p>
+      <p className="font-sm text-subtle-colore">{ayat.teksIndonesia}</p>
     </div>
   );
 }
